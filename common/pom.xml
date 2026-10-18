@@ -1,0 +1,8 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <parent><groupId>dev.sharedbody</groupId><artifactId>sharedbody-parent</artifactId><version>1.4.0</version></parent>
+  <artifactId>sharedbody-common</artifactId>
+  <dependencies>
+    <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>5.13.4</version><scope>test</scope></dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dev.sharedbody</groupId>
+  <artifactId>sharedbody-parent</artifactId>
+  <version>1.4.0</version>
+  <packaging>pom</packaging>
+  <modules><module>common</module><module>paper</module><module>client</module></modules>
+  <properties>
+    <maven.compiler.release>25</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <repositories>
+    <repository><id>paper</id><url>https://repo.papermc.io/repository/maven-public/</url></repository>
+    <repository><id>fabric</id><url>https://maven.fabricmc.net/</url></repository>
+    <repository><id>minecraft</id><url>https://libraries.minecraft.net/</url></repository>
+  </repositories>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.14.1</version></plugin>
+        <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.5.4</version></plugin>
+        <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-shade-plugin</artifactId><version>3.6.1</version><configuration><createDependencyReducedPom>false</createDependencyReducedPom></configuration></plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

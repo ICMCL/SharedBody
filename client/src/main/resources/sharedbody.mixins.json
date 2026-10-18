@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "package": "dev.sharedbody.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "KeyMappingMixin",
+    "KeyMappingAccessor",
+    "MouseHandlerMixin",
+    "KeyboardHandlerMixin",
+    "EntityMixin",
+    "CameraMixin",
+    "HudMixin",
+    "HeartTypeMixin",
+    "GameRendererMixin",
+    "LevelExtractorMixin",
+    "ContainerScreenAccessor",
+    "ContainerScreenMixin"
+  ],
+  "injectors": {"defaultRequire": 1}
+}

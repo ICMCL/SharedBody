@@ -1,0 +1,15 @@
+name: SharedBody
+version: 1.4.0
+main: dev.sharedbody.paper.SharedBodyPlugin
+api-version: '26.3'
+description: Multiple players share one real player body using the SharedBody client bridge.
+authors: [liruigang]
+commands:
+  sharedbody:
+    description: Configure and run a shared body
+    aliases: [sb]
+    usage: /sb create [body] | add [body] <player/selector> | remove [body] <player> | settings/start/stop/status/dissolve [body]
+permissions:
+  sharedbody.admin:
+    description: Manage shared body sessions
+    default: op

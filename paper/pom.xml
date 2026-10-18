@@ -1,0 +1,14 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <parent><groupId>dev.sharedbody</groupId><artifactId>sharedbody-parent</artifactId><version>1.4.0</version></parent>
+  <artifactId>sharedbody-paper</artifactId>
+  <dependencies>
+    <dependency><groupId>dev.sharedbody</groupId><artifactId>sharedbody-common</artifactId><version>${project.version}</version></dependency>
+    <dependency><groupId>io.papermc.paper</groupId><artifactId>paper-api</artifactId><version>26.3.build.183-stable</version><scope>provided</scope></dependency>
+    <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>5.13.4</version><scope>test</scope></dependency>
+    <dependency><groupId>org.ow2.asm</groupId><artifactId>asm-tree</artifactId><version>9.10.1</version><scope>test</scope></dependency>
+  </dependencies>
+  <build><plugins>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-shade-plugin</artifactId><executions><execution><phase>package</phase><goals><goal>shade</goal></goals></execution></executions></plugin>
+  </plugins></build>
+</project>

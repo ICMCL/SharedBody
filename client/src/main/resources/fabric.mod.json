@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "sharedbody",
+  "version": "1.4.0",
+  "name": "SharedBody Client",
+  "description": "Native input and shared camera bridge for the SharedBody Paper plugin.",
+  "environment": "client",
+  "entrypoints": {"client": ["dev.sharedbody.client.SharedBodyClient"]},
+  "mixins": ["sharedbody.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "26.3",
+    "java": ">=25",
+    "fabric-networking-api-v1": "*",
+    "fabric-lifecycle-events-v1": "*"
+  }
+}
